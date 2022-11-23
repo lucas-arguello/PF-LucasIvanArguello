@@ -389,32 +389,65 @@ main .testi__container .testi__card .testi__calificasion .bi {
 
 /*--*/
 @media (min-width: 768px) {
-  header .container {
+  header .container .nav {
+    display: flex;
+  }
+  header .container .nav__navBar {
+    width: 20%;
+  }
+  header .container .nav__navBar--logo {
+    width: 400%;
+  }
+  header .container .nav__navBar--icon-btn {
+    display: none;
+  }
+  header .container .nav__list {
+    height: auto;
+    position: static;
     flex-direction: row;
-    justify-content: space-between;
-  }
-  header .container__logo {
-    width: 100%;
-    text-align: left;
-    padding-left: 0.2rem;
-  }
-  header .container__logo--img {
-    width: 90%;
-  }
-  header .container .nav__list--items {
-    padding: 0 0.8rem;
-    margin: 0 0.5rem;
   }
   header .container .nav__list--items-li {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  main .info__container {
+    flex-direction: row;
   }
   main .profesiones__container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1rem;
+  }
+  main .profesiones__container--doctores {
+    /*include flex-justbetween-aligncenter;*/
+    /*background: red;*/
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .profesiones__container--doctores .profesiones__card {
+    /*background: black;*/
+    /*max-width: 30%;
+    flex: 1 1 33%;*/
+    margin: 0.5rem;
+  }
+  main .profesiones__container--doctores .profesiones__card--title {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  main .profesiones__container--doctores .profesiones__card--img {
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 150px;
+    min-height: 150px;
+  }
+  main .profesiones__container--doctores .profesiones__curri {
+    margin: 0.5rem;
+  }
+  main .profesiones__container--doctores .profesiones__curri--nombre {
+    font-size: 1.2rem;
+  }
+  main .profesiones__container--doctores .profesiones__curri--btn {
+    font-size: 0.9rem;
   }
   main .contacto__container {
     display: flex;
@@ -443,22 +476,33 @@ main .testi__container .testi__card .testi__calificasion .bi {
   }
   footer {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
-/*-------------1024----------------*/
+/*--------------------------------1024--------------------------------------------*/
 @media (min-width: 1024px) {
   header {
-    padding: 1%;
+    padding: 2%;
   }
-  header .container__logo--img {
-    width: 80%;
+  header .container .nav {
+    display: flex;
   }
-  header .container .nav__list--items {
-    padding: 0.5rem 1rem;
+  header .container .nav__navBar {
+    padding: 0;
+  }
+  header .container .nav__navBar--logo-img {
+    width: 60%;
+  }
+  header .container .nav__navBar--icon-btn {
+    display: none;
+  }
+  header .container .nav__list {
+    justify-content: center;
   }
   header .container .nav__list--items-li {
-    font-size: 1.8rem;
+    width: 100%;
+    font-size: 1.7rem;
+    padding-left: 2.5rem;
   }
   main .info__container {
     flex-direction: row;
@@ -508,7 +552,7 @@ main .testi__container .testi__card .testi__calificasion .bi {
     margin: 2rem auto;
   }
   main .serParte__container .serParte__title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: rgb(255, 255, 0);
   }
   main .serParte__container .serParte__parrafo {
@@ -516,19 +560,54 @@ main .testi__container .testi__card .testi__calificasion .bi {
   }
   main .serParte__container .serParte_btn {
     font-size: 1.5rem;
+    border-radius: 15%;
   }
   main .profesiones__titulo {
     margin-bottom: 3rem;
   }
-  main .profesiones__container .profesiones__card {
-    max-width: 30%;
-    flex: 1 1 33%;
+  main .profesiones__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
-  main .profesiones__container .profesiones__card .profesiones__img {
+  main .profesiones__container--doctores {
+    /*include flex-justbetween-aligncenter;*/
+    /*background: red;*/
+    width: 47%;
+    display: flex;
+    padding: 0.2rem;
+    margin: 1rem 0.5rem;
+  }
+  main .profesiones__container--doctores .profesiones__card {
+    margin: 0.5rem;
+  }
+  main .profesiones__container--doctores .profesiones__card--title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  main .profesiones__container--doctores .profesiones__card--img {
     max-width: 250px;
     max-height: 250px;
-    min-width: 250px;
-    min-height: 250px;
+    min-width: 200px;
+    min-height: 200px;
+  }
+  main .profesiones__container--doctores .profesiones__curri {
+    margin: 0.5rem;
+  }
+  main .profesiones__container--doctores .profesiones__curri--nombre {
+    font-size: 1.8rem;
+  }
+  main .profesiones__container--doctores .profesiones__curri--btn {
+    font-size: 1rem;
+  }
+  main .profesiones__container--doctores .profesiones__curri--subtitle {
+    font-size: 1.5rem;
+  }
+  main .profesiones__container--doctores .profesiones__curri--descrip {
+    font-size: 1.2rem;
+  }
+  main .profesiones__container--doctores .profesiones__curri--subtitleHorario {
+    font-size: 1.5rem;
   }
   main .contacto__container {
     width: 100%;
@@ -593,34 +672,42 @@ main .testi__container .testi__card .testi__calificasion .bi {
     padding-left: 2rem;
   }
 }
-/*-------------1200----------------*/
+/*------------------------------1200-------------------------------------*/
 @media (min-width: 1200px) {
-  header .container__logo {
-    width: 20%;
+  header {
+    padding: 2% 1%;
   }
-  header .container__logo--img {
-    width: 40%;
+  header .container .nav {
+    display: flex;
   }
-  header .container .nav__list--items {
-    margin: 0 1.5rem;
+  header .container .nav__navBar {
+    padding: 0;
+  }
+  header .container .nav__navBar--logo-img {
+    width: 60%;
+  }
+  header .container .nav__navBar--icon-btn {
+    display: none;
+  }
+  header .container .nav__list {
+    justify-content: center;
   }
   header .container .nav__list--items-li {
-    font-size: 1.5rem;
+    width: 100%;
+    font-size: 2rem;
+    padding-left: 2.5rem;
+  }
+  main .info__container {
+    flex-direction: row;
+  }
+  main .info__container .info__description {
+    width: 100%;
+  }
+  main .info__container .info__registro {
+    margin-left: 2rem;
+    width: 70%;
   }
 }
-main .profesiones__titulo {
-  margin-bottom: 3rem;
-}
-main .profesiones__container .profesiones__card {
-  flex: 1 1 5%;
-}
-main .profesiones__container .profesiones__card .profesiones__img {
-  max-width: 200px;
-  max-height: 200px;
-  min-width: 200px;
-  min-height: 200px;
-}
-
 .info__container {
   width: 100%;
   font-size: 1.5rem;
