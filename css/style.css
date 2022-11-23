@@ -1,0 +1,620 @@
+* {
+  /*outline: 1px solid green;*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  color: white;
+  background: rgb(194, 224, 149);
+  margin: 0;
+  background-image: linear-gradient(rgba(20, 53, 134, 0.5), rgba(20, 53, 134, 0.5)), url(../imagenes/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  background-position-x: center;
+  background-position-y: 20%;
+  background-size: cover;
+  padding: 5%;
+  display: grid;
+}
+
+header {
+  top: 0;
+  z-index: 2;
+  position: sticky;
+  padding: 1.5%;
+  background: rgb(32, 218, 137);
+}
+header .container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header .container__logo--img {
+  width: 80%;
+  height: 60px;
+}
+header .container .nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+header .container .nav__list--items {
+  padding: 0.5rem;
+  list-style: none;
+}
+header .container .nav__list--items-li {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+header .container .nav__list--items-li:hover {
+  color: rgb(246, 255, 0);
+}
+
+footer {
+  padding: 1rem 0;
+  text-align: center;
+  color: black;
+  background: rgb(32, 218, 137);
+}
+footer .footer__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+footer .footer__container--redes {
+  padding-left: 1rem;
+  color: black;
+}
+footer .autor {
+  text-decoration: none;
+  color: rgb(0, 110, 255);
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+main .info__container {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+}
+main .info__container .info__description {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+main .info__container .info__registro {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+main .info__container .info__registro .info__registro--btn {
+  padding: 0.5rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  margin-top: 1.5rem;
+}
+main .especie__container {
+  margin-top: 5rem;
+  padding-top: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+main .especie__container .especie__title {
+  color: rgb(255, 255, 0);
+  margin-bottom: 1rem;
+}
+main .especie__container .especie__subtitle {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: rgb(255, 255, 0);
+}
+main .especie__container .especie__container--card {
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .especie__container .especie__container--card .especie__card {
+  display: inline-block;
+  margin: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+main .especie__container .especie__container--card .especie__card p {
+  color: white;
+  font-weight: bolder;
+}
+main .especie__container .especie__container--card .especie__card .especie__img {
+  max-width: 200px;
+  min-width: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+main .especie__container .especie__container--card .especie__card .especie__btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 1.5rem;
+}
+main .ventajas__container {
+  margin-top: 3rem;
+}
+main .ventajas__container .ventajas__subtitle {
+  color: rgb(255, 255, 0);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+main .ventajas__container .ventajas__parrafo {
+  font-size: 1.2rem;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  padding: 1rem;
+}
+main .ventajas__container .ventajas__parrafo .ventajas__span {
+  color: rgb(144, 221, 56);
+  font-weight: 500;
+}
+
+main {
+  display: inline-block;
+}
+main .somos__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+main .somos__container .somos__title {
+  color: rgb(255, 255, 0);
+  padding-bottom: 0.5rem;
+}
+main .somos__container .somos__parrafo1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+}
+main .somos__container .somos__parrafo1 p {
+  margin: 0.5rem 0;
+}
+main .somos__container .somos__img img {
+  width: 100%;
+  background: rgb(32, 218, 137);
+}
+main .somos__parrafo2 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+main .somos__parrafo2 p {
+  margin: 0.5rem 0;
+}
+main .serParte__container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+main .serParte__container .serParte__title {
+  text-align: center;
+  margin: 1rem;
+}
+main .serParte__container .serParte__parrafo {
+  text-align: center;
+}
+main .serParte__container .serParte_btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 50%;
+  margin: 1.5rem auto;
+}
+
+main .profesiones__titulo {
+  color: rgb(255, 255, 0);
+  padding-top: 5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+}
+main .profesiones__container .profesiones__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+main .profesiones__container .profesiones__card .profesiones__title {
+  font-size: 2rem;
+}
+main .profesiones__container .profesiones__card .profesiones__img {
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  margin-bottom: 1rem;
+}
+main .profesiones__container .profesiones__card .profesines__btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 1.5rem;
+}
+
+.contacto__container,
+.preguntas__container {
+  /*-- animacion ---*/
+  animation: from-right 2s ease;
+}
+
+main .contacto__container {
+  width: 100%;
+}
+main .contacto__container .form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+main .contacto__container .form .contacto__title {
+  font-size: 2rem;
+  color: rgb(255, 255, 0);
+}
+main .contacto__container .form .contacto__formulario {
+  display: flex;
+  flex-direction: column;
+}
+main .contacto__container .form .contacto__formulario .contacto__formulario--label {
+  text-align: left;
+  margin-top: 1rem;
+}
+main .contacto__container .form .contacto__formulario .contacto__btn {
+  width: 30%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10%;
+}
+main .contacto__container .preguntas__container {
+  margin-top: 3rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+}
+main .contacto__container .preguntas__container .preguntas__title {
+  color: rgb(255, 255, 0);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+main .contacto__container .preguntas__container .pregunta {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+main .contacto__container .preguntas__container .respuesta {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .funciona__container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+main .funciona__container .funciona__procedi .funciona__title {
+  margin: 5% 0%;
+  color: rgb(255, 255, 0);
+}
+main .funciona__container .funciona__procedi .funciona__items li {
+  margin: 5%;
+}
+main .funciona__container .funciona__container--video iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+main .testi__container {
+  font-size: 1.3rem;
+}
+main .testi__container .testi__title {
+  color: rgb(255, 255, 0);
+  margin-bottom: 1rem;
+}
+main .testi__container .testi__card {
+  width: 80%;
+  margin: 10% 0%;
+  border: 0.2rem solid black;
+  border-radius: 0.7rem;
+}
+main .testi__container .testi__card .testi__card--img {
+  border-radius: 50rem;
+  margin: 2% 0%;
+}
+main .testi__container .testi__card .testi__nombre + p {
+  margin: 5% 0%;
+}
+main .testi__container .testi__card .testi__calificasion .bi {
+  color: greenyellow;
+}
+
+/*--*/
+@media (min-width: 768px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .container__logo {
+    width: 100%;
+    text-align: left;
+    padding-left: 0.2rem;
+  }
+  header .container__logo--img {
+    width: 90%;
+  }
+  header .container .nav__list--items {
+    padding: 0 0.8rem;
+    margin: 0 0.5rem;
+  }
+  header .container .nav__list--items-li {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  main .profesiones__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  main .contacto__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  main .contacto__container .form {
+    margin-right: 1rem;
+  }
+  main .contacto__container .form .contacto__title {
+    font-size: 1.5rem;
+  }
+  main .contacto__container .form .contacto__formulario .contacto__formulario--label {
+    font-size: 1.5rem;
+  }
+  main .contacto__container .form .contacto__btn {
+    align-self: center;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10%;
+  }
+  main .preguntas__container {
+    width: 100%;
+  }
+  footer {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+/*-------------1024----------------*/
+@media (min-width: 1024px) {
+  header {
+    padding: 1%;
+  }
+  header .container__logo--img {
+    width: 80%;
+  }
+  header .container .nav__list--items {
+    padding: 0.5rem 1rem;
+  }
+  header .container .nav__list--items-li {
+    font-size: 1.8rem;
+  }
+  main .info__container {
+    flex-direction: row;
+  }
+  main .info__container .info__description {
+    width: 100%;
+  }
+  main .info__container .info__registro {
+    margin-left: 2rem;
+    width: 70%;
+  }
+  main .especie__container .especie__title {
+    font-size: 3rem;
+  }
+  main .especie__container .especie__subtitle {
+    font-size: 2.5rem;
+  }
+  main .somos__container {
+    display: flex;
+    flex-direction: row;
+  }
+  main .somos__container .somos__subcontainer .somos__title {
+    margin-right: 1rem;
+    font-size: 3rem;
+    width: 100%;
+    height: 70%;
+  }
+  main .somos__container .somos__subcontainer .somos__parrafo1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  main .somos__container .somos__img {
+    background: yellow;
+    margin: 3rem 1rem 0rem 1rem;
+  }
+  main .somos__container .somos__img img {
+    max-width: 550px;
+    min-width: 550px;
+    max-height: 450px;
+    min-height: 450px;
+  }
+  main .somos__parrafo2 {
+    font-size: 1.5rem;
+    margin: 2rem auto;
+  }
+  main .somos__parrafo2 p {
+    margin: 2rem auto;
+  }
+  main .serParte__container .serParte__title {
+    font-size: 2rem;
+    color: rgb(255, 255, 0);
+  }
+  main .serParte__container .serParte__parrafo {
+    font-size: 1.5rem;
+  }
+  main .serParte__container .serParte_btn {
+    font-size: 1.5rem;
+  }
+  main .profesiones__titulo {
+    margin-bottom: 3rem;
+  }
+  main .profesiones__container .profesiones__card {
+    max-width: 30%;
+    flex: 1 1 33%;
+  }
+  main .profesiones__container .profesiones__card .profesiones__img {
+    max-width: 250px;
+    max-height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+  }
+  main .contacto__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .contacto__container .form {
+    width: 100%;
+    margin: 2%;
+  }
+  main .contacto__container .form .contacto__title {
+    font-size: 2rem;
+  }
+  main .contacto__container .form .contacto__formulario {
+    display: flex;
+  }
+  main .contacto__container .form .contacto__formulario .contacto__formulario--input {
+    width: 100%;
+  }
+  main .contacto__container .form .contacto__formulario .contacto__formulario--label {
+    font-size: 1.5rem;
+  }
+  main .contacto__container .form .contacto__formulario .contacto__btn {
+    align-self: center;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10%;
+  }
+  main .contacto__container .preguntas__container {
+    width: 100%;
+    margin: 2%;
+  }
+  main .contacto__container .preguntas__container .preguntas__title {
+    padding-left: 0%;
+    font-size: 2rem;
+  }
+  main .funciona__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  main .funciona__container .funciona__procedi .funciona__title {
+    font-size: 3rem;
+  }
+  main .testi__container .testi__title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  main .testi__container .testi__tablero {
+    display: flex;
+    align-items: center;
+  }
+  main .testi__container .testi__tablero .testi__card {
+    margin: 1%;
+  }
+  footer .footer__container--redes {
+    padding-left: 2rem;
+  }
+}
+/*-------------1200----------------*/
+@media (min-width: 1200px) {
+  header .container__logo {
+    width: 20%;
+  }
+  header .container__logo--img {
+    width: 40%;
+  }
+  header .container .nav__list--items {
+    margin: 0 1.5rem;
+  }
+  header .container .nav__list--items-li {
+    font-size: 1.5rem;
+  }
+}
+main .profesiones__titulo {
+  margin-bottom: 3rem;
+}
+main .profesiones__container .profesiones__card {
+  flex: 1 1 5%;
+}
+main .profesiones__container .profesiones__card .profesiones__img {
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.info__container {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.info__container .info__description {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.info__container .info__registro {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+.info__container .info__registro .info__registro--btn {
+  padding: 0.5rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

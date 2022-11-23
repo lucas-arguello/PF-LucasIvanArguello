@@ -1,0 +1,46 @@
+
+main{
+
+  .profesiones__titulo {
+    color: map-get($text-color, text-3);
+      padding-top: 5rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 3rem;
+    }
+    
+  .profesiones__container{
+
+      .profesiones__card {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding-bottom: 3rem;
+         
+  
+          .profesiones__title {
+             font-size: 2rem;
+        }
+          .profesiones__img {
+              max-width: 300px;
+              max-height: 300px;
+              min-width: 300px;
+              min-height: 300px;
+              margin-bottom: 1rem;
+        }
+          .profesines__btn {
+              @include boton-2(0.5rem 1rem, 1rem, 600, 1.5rem);
+        }
+      }
+    
+  }
+
+      
+
+  }
+
+
+
+     
+ 
+  
