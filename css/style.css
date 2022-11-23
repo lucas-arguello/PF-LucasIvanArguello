@@ -115,28 +115,6 @@ svg {
   vertical-align: middle;
 }
 
-main .info__container {
-  width: 100%;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  display: flex;
-}
-main .info__container .info__description {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-main .info__container .info__registro {
-  width: 100%;
-  text-align: center;
-  margin-top: 2rem;
-}
-main .info__container .info__registro .info__registro--btn {
-  padding: 0.5rem 3rem;
-  font-size: 1.5rem;
-  border-radius: 1.5rem;
-  margin-top: 1.5rem;
-}
 main .especie__container {
   margin-top: 5rem;
   padding-top: 1rem;
@@ -144,23 +122,23 @@ main .especie__container {
   display: flex;
   flex-direction: column;
 }
-main .especie__container .especie__title {
+main .especie__container--title {
   color: rgb(255, 255, 0);
   margin-bottom: 1rem;
 }
-main .especie__container .especie__subtitle {
+main .especie__container--subtitle {
   font-size: 2rem;
   margin-bottom: 0.75rem;
   color: rgb(255, 255, 0);
 }
-main .especie__container .especie__container--card {
+main .especie__container--tablero {
   width: 100%;
   padding: 0.5rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-main .especie__container .especie__container--card .especie__card {
+main .especie__container--tablero .especie__card {
   display: inline-block;
   margin: 1rem;
   font-size: 1.5rem;
@@ -169,11 +147,11 @@ main .especie__container .especie__container--card .especie__card {
   align-items: center;
   justify-content: space-around;
 }
-main .especie__container .especie__container--card .especie__card p {
+main .especie__container--tablero .especie__card p {
   color: white;
   font-weight: bolder;
 }
-main .especie__container .especie__container--card .especie__card .especie__img {
+main .especie__container--tablero .especie__card--img {
   max-width: 200px;
   min-width: 200px;
   max-height: 200px;
@@ -181,7 +159,7 @@ main .especie__container .especie__container--card .especie__card .especie__img 
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
-main .especie__container .especie__container--card .especie__card .especie__btn {
+main .especie__container--tablero .especie__card--btn {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
@@ -190,14 +168,14 @@ main .especie__container .especie__container--card .especie__card .especie__btn 
 main .ventajas__container {
   margin-top: 3rem;
 }
-main .ventajas__container .ventajas__subtitle {
+main .ventajas__container--subtitle {
   color: rgb(255, 255, 0);
   text-align: center;
   font-size: 2.5rem;
   margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
-main .ventajas__container .ventajas__parrafo {
+main .ventajas__container--parrafo {
   font-size: 1.2rem;
   line-height: 2;
   display: flex;
@@ -205,7 +183,7 @@ main .ventajas__container .ventajas__parrafo {
   border: 1px solid;
   padding: 1rem;
 }
-main .ventajas__container .ventajas__parrafo .ventajas__span {
+main .ventajas__container--parrafo-span {
   color: rgb(144, 221, 56);
   font-weight: 500;
 }
@@ -745,24 +723,23 @@ main .testi__container .testi__card .testi__calificasion .bi {
     width: 70%;
   }
 }
-.info__container {
+main .info__container {
   width: 100%;
   font-size: 1.5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
   display: flex;
-  flex-direction: column;
 }
-.info__container .info__description {
+main .info__container .info__description {
   width: 100%;
   margin-bottom: 2rem;
 }
-.info__container .info__registro {
+main .info__container .info__registro {
   width: 100%;
   text-align: center;
   margin-top: 2rem;
 }
-.info__container .info__registro .info__registro--btn {
+main .info__container .info__registro--btn {
   padding: 0.5rem 3rem;
   font-size: 1.5rem;
   border-radius: 1.5rem;
