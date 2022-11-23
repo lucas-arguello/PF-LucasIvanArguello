@@ -232,28 +232,58 @@ main .profesiones__titulo {
   text-align: center;
   font-weight: 600;
   font-size: 3rem;
+  margin-bottom: 5rem;
 }
-main .profesiones__container .profesiones__card {
+main .profesiones__container--doctores {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5%;
+  margin-bottom: 1.5rem;
+}
+main .profesiones__container--doctores .profesiones__card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
 }
-main .profesiones__container .profesiones__card .profesiones__title {
+main .profesiones__container--doctores .profesiones__card--title {
   font-size: 2rem;
+  color: rgb(255, 255, 0);
 }
-main .profesiones__container .profesiones__card .profesiones__img {
-  max-width: 300px;
-  max-height: 300px;
-  min-width: 300px;
-  min-height: 300px;
+main .profesiones__container--doctores .profesiones__card--img {
+  max-height: 250px;
+  min-height: 250px;
+  min-width: 200px;
+  max-width: 200px;
   margin-bottom: 1rem;
 }
-main .profesiones__container .profesiones__card .profesines__btn {
+main .profesiones__container--doctores .profesiones__card--btn {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 1.5rem;
+}
+main .profesiones__container--doctores .profesiones__curri {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+main .profesiones__container--doctores .profesiones__curri--btn {
+  padding: 0.2rem 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 1.5rem;
+}
+main .profesiones__container--doctores .profesiones__curri--subtitle {
+  margin-top: 1rem;
+}
+main .profesiones__container--doctores .profesiones__curri--descrip {
+  list-style: none;
+}
+main .profesiones__container--doctores .profesiones__curri--subtitleHorario {
+  margin-top: 1rem;
+}
+main .profesiones__container--doctores .profesiones__curri--horario {
+  list-style: none;
 }
 
 .contacto__container,

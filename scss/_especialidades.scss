@@ -1,43 +1,78 @@
 
 main{
 
-  .profesiones__titulo {
-    color: map-get($text-color, text-3);
+  .profesiones {
+    &__titulo {
+      color: map-get($text-color, text-3);
       padding-top: 5rem;
       text-align: center;
       font-weight: 600;
       font-size: 3rem;
+      margin-bottom: 5rem;
+      
     }
-    
-  .profesiones__container{
-
-      .profesiones__card {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         padding-bottom: 3rem;
-         
   
-          .profesiones__title {
-             font-size: 2rem;
+    &__container {
+         
+      &--doctores {
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 5%;
+        margin-bottom: 1.5rem;
+        
+  
+        .profesiones__card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 1.5rem;
+          
+  
+          &--title {
+            font-size: 2rem;
+            color: map-get($text-color, text-3);
+          }
+          &--img {
+            max-height: 250px;
+            min-height: 250px;
+            min-width: 200px;
+            max-width: 200px;
+            margin-bottom: 1rem;
+          }
+          &--btn {
+            @include boton-2(0.5rem 1rem, 1rem, 600, 1.5rem);
+          }
         }
-          .profesiones__img {
-              max-width: 300px;
-              max-height: 300px;
-              min-width: 300px;
-              min-height: 300px;
-              margin-bottom: 1rem;
-        }
-          .profesines__btn {
-              @include boton-2(0.5rem 1rem, 1rem, 600, 1.5rem);
+  
+        .profesiones__curri {
+          text-align: center;
+          margin-bottom: 3rem;
+                      
+          &--btn {
+            @include boton-2(0.2rem 0.9rem, 1rem, 600, 1.5rem);
+          }
+
+          &--subtitle{
+            margin-top: 1rem;
+          }
+
+          &--descrip{
+            list-style: none;
+          }
+
+          &--subtitleHorario{
+            margin-top: 1rem;
+          }
+
+          &--horario{
+            list-style: none;
+          }
         }
       }
-    
+    }
   }
 
-      
-
-  }
+}
 
 
 
