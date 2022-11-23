@@ -4,31 +4,81 @@ header {
   position: sticky;
   padding: 1.5%;
   background: $backg-color;
+   
+
   .container {
-    text-align: center;
-    @include flex-col-center;
-    &__logo {
-            &--img {
-        width: 80%;
-        height: 60px;
-             }
-    }
     .nav {
-      &__list {
-        @include flex-content (space-around);
-        &--items {
+      &__navBar {
+        padding: 1rem;
+        
+        @include flex-alingItems-justify(center, space-between);
+
+        &--logo {
+          width: 25%;
+          &-img {
+            width: 100%;
+                     }
+        }
+        &--icon-btn {
           padding: 0.5rem;
+          border-radius: 10%;
+          color: map-get($text-color, text-4);
+          
+        }
+        .open {
+          .icon {
+            font-size: 2rem;
+          }
+        }
+        .close {
+          .icon {
+            font-size: 2rem;
+          }
+        }
+      }
+      
+      &__list {
+        top: 95px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 0px;
+        position: absolute;
+        overflow: hidden;
+        transition: height 0.4s ease;
+        background: $backg-color;
+        display: flex;
+        @include alingItems-direction-justify(center, column, space-around);
+                
+        &--items {
           list-style: none;
+
           &-li {
-            font-size: 1rem;
+            font-size: 1.5rem;
             text-decoration: none;
-            color: map-get($text-color, text-1);
-               &:hover {
+            color: map-get($text-color, text-4);
+            background: $backg-color;
+           
+            
+            &:hover {
               color: $hover-1;
             }
           }
         }
       }
+    }
+    #nav-header:target .nav__list {
+      height: 300px;
+    }
+    #nav-header:target .open {
+      display: none;
+    }
+    #nav-header:target .close {
+      display: block;
+    }
+    .close {
+      display: none;
     }
   }
 }

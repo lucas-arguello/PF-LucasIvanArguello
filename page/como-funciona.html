@@ -41,36 +41,45 @@
   <body>
     <header>
       <div class="container">
-        <a class="container__logo" href="index.html">
-          <img
-            class="container__logo--img"
-            src="../imagenes/servicio-medicos.png"
-            alt="logo"
-          />
-        </a>
-
-        <nav class="nav">
+        <nav class="nav" id="nav-header">
+          <!------ hamburguesa ----->
+          <div class="nav__navBar">
+            <a class="nav__navBar--logo" href="index.html">
+              <img
+                class="nav__navBar--logo-img"
+                src="./imagenes/logomedicos.jpg"
+                alt="logo"
+              />
+            </a>
+            <a class="nav__navBar--icon-btn open" href="#nav-header"
+              ><i class="icon fa-solid fa-bars" id="icon"></i
+            ></a>
+            <a class="nav__navBar--icon-btn close" href="#---------"
+              ><i class="icon fa-solid fa-x"></i
+            ></a>
+          </div>
+          <!----------------------->
           <ul class="nav__list">
             <li class="nav__list--items">
-              <a class="nav__list--items-li" href="../index.html">Inicio</a>
+              <a class="nav__list--items-li" href="./index.html">Inicio</a>
             </li>
             <li class="nav__list--items">
-              <a class="nav__list--items-li" href="../page/nosotros.html"
+              <a class="nav__list--items-li" href="./page/nosotros.html"
                 >Nosotros</a
               >
             </li>
             <li class="nav__list--items">
-              <a class="nav__list--items-li" href="../page/especialidades.html"
+              <a class="nav__list--items-li" href="./page/especialidades.html"
                 >Especialidades</a
               >
             </li>
             <li class="nav__list--items">
-              <a class="nav__list--items-li" href="../page/contacto.html"
+              <a class="nav__list--items-li" href="./page/contacto.html"
                 >Contacto</a
               >
             </li>
             <li class="nav__list--items">
-              <a class="nav__list--items-li" href="../page/como-funciona.html"
+              <a class="nav__list--items-li" href="./page/como-funciona.html"
                 >Como Funciona</a
               >
             </li>

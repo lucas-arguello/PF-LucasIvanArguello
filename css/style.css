@@ -26,31 +26,68 @@ header {
   padding: 1.5%;
   background: rgb(32, 218, 137);
 }
-header .container {
-  text-align: center;
+header .container .nav__navBar {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .nav__navBar--logo {
+  width: 25%;
+}
+header .container .nav__navBar--logo-img {
+  width: 100%;
+}
+header .container .nav__navBar--icon-btn {
+  padding: 0.5rem;
+  border-radius: 10%;
+  color: rgb(0, 110, 255);
+}
+header .container .nav__navBar .open .icon {
+  font-size: 2rem;
+}
+header .container .nav__navBar .close .icon {
+  font-size: 2rem;
+}
+header .container .nav__list {
+  top: 95px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  background: rgb(32, 218, 137);
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-header .container__logo--img {
-  width: 80%;
-  height: 60px;
-}
-header .container .nav__list {
-  display: flex;
   justify-content: space-around;
 }
 header .container .nav__list--items {
-  padding: 0.5rem;
   list-style: none;
 }
 header .container .nav__list--items-li {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
-  color: black;
+  color: rgb(0, 110, 255);
+  background: rgb(32, 218, 137);
 }
 header .container .nav__list--items-li:hover {
   color: rgb(246, 255, 0);
+}
+header .container #nav-header:target .nav__list {
+  height: 300px;
+}
+header .container #nav-header:target .open {
+  display: none;
+}
+header .container #nav-header:target .close {
+  display: block;
+}
+header .container .close {
+  display: none;
 }
 
 footer {
