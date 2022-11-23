@@ -173,9 +173,6 @@ main .ventajas__container .ventajas__parrafo .ventajas__span {
   font-weight: 500;
 }
 
-main {
-  display: inline-block;
-}
 main .somos__container {
   width: 100%;
   display: flex;
@@ -223,6 +220,7 @@ main .serParte__container .serParte__parrafo {
 }
 main .serParte__container .serParte_btn {
   font-size: 1rem;
+  font-weight: 500;
   padding: 0.5rem;
   width: 50%;
   margin: 1.5rem auto;

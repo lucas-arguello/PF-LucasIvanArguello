@@ -1,6 +1,5 @@
 main{
-    display: inline-block;
-    
+        
     .somos__container{
       width: 100%;
       display: flex;
@@ -32,8 +31,6 @@ main{
           
     }
 
-
-
     .somos__parrafo2{
       font-size: 1.2rem;
       margin: 1.5rem 0;
@@ -59,21 +56,14 @@ main{
 
       .serParte_btn{
         font-size: 1rem;
+        font-weight: 500;
         padding: .5rem;
         width: 50%;
         margin: 1.5rem auto;
       }
-    }
-
-
-
-    
-                     
-         
-         
-       
-       
-     }
+    }            
+           
+}
 
 
 

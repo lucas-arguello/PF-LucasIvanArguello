@@ -28,3 +28,20 @@ border-radius: $border-radius;
     flex-direction: $direction;
     justify-content: $justify;
   }
+
+  @mixin flex-justbetween-aligncenter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @mixin alingItems-direction-justify($aling, $direction, $justify) {
+    align-items: $aling;
+    flex-direction: $direction;
+    justify-content: $justify;
+  }
+  @mixin flex-alingItems-justify($alignItems, $justify) {
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justify;
+  }
