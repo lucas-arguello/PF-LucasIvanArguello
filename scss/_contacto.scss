@@ -1,9 +1,4 @@
-.contacto__container,
-.preguntas__container {
-  
-  /*-- animacion ---*/
-  animation: from-right 2s ease;
-}
+
 
 main {
   
@@ -17,6 +12,19 @@ main {
       text-align: center;
       width: 100%;
       margin-top: 3rem;
+
+      animation: from-right 3s ease;
+      @keyframes from-right {
+        0% {
+          opacity: 0;
+          transform: translateX(580px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        
+      }
 
       &-title{
 

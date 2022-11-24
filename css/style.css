@@ -332,12 +332,6 @@ main .profesiones__container--doctores .profesiones__curri--horario li {
   margin: 3.5%;
 }
 
-.contacto__container,
-.preguntas__container {
-  /*-- animacion ---*/
-  animation: from-right 2s ease;
-}
-
 main .contacto__container {
   width: 100%;
 }
@@ -347,6 +341,17 @@ main .contacto__container--form {
   text-align: center;
   width: 100%;
   margin-top: 3rem;
+  animation: from-right 3s ease;
+}
+@keyframes from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(580px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 main .contacto__container--form-title {
   font-size: 2.5rem;
@@ -448,6 +453,16 @@ main .testi__container--tablero .testi__card--calificasion .bi {
 }
 
 /*--*/
+/*@keyframes from-right {
+    0% {
+      opacity: 0;
+      transform: translateX(80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }*/
 @media (min-width: 768px) {
   header .container .nav {
     display: flex;
