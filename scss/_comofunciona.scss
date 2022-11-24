@@ -8,15 +8,21 @@ main{
     flex-direction: column;
     font-size: 1.3rem;
 
-      .funciona__procedi{
+      &--procedi{
 
-          .funciona__title{
+          &-title{
+            font-size: 2.5rem;
             margin: 5% 0%;
             color: map-get($text-color, text-3);
+            text-align: center;
+            
           }
 
-          .funciona__items li{
+          &-items li{
+            text-align: center;
+            font-size: 1.3rem;
             margin: 5% ;
+            width: 95%;
           }
 
                 
@@ -30,37 +36,49 @@ main{
   }
 
   .testi__container {
-    font-size: 1.3rem;
-
-      .testi__title{
+       
+      &--subtitle{
+        font-size: 2rem;
         color: map-get($text-color, text-3);
-        margin-bottom: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+        
+        
         
       }
 
-      .testi__card{
-        
-        width: 80%;
-        margin: 10% 0%;
-        border: .2rem solid black;
-        border-radius: .7rem;
+      &--tablero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        .testi__card--img{
-          border-radius: 50rem;
-          margin: 2% 0%;
-        }
-         
-        .testi__nombre + p {
-            margin: 5% 0%;
-          }    
-        
-        .testi__calificasion{
-           .bi{
-            color: greenyellow;
-           }
-        }  
+        .testi__card{
+          font-size: 1.3rem;
+          width: 80%;
+          margin: 5% 0%;
+          border: .2rem solid black;
+          border-radius: .7rem;
+            
+          &--img{
+            border-radius: 50rem;
+            margin: 2% 0%;
+          }
+           
+          &--nombre + p {
+              margin: 5% 0%;
+            }    
+          
+          &--calificasion{
+             .bi{
+              color: greenyellow;
+             }
+          }  
+  
+        } 
 
-      } 
+      }
+
+      
   }
 
 }

@@ -376,38 +376,48 @@ main .funciona__container {
   flex-direction: column;
   font-size: 1.3rem;
 }
-main .funciona__container .funciona__procedi .funciona__title {
+main .funciona__container--procedi-title {
+  font-size: 2.5rem;
   margin: 5% 0%;
   color: rgb(255, 255, 0);
+  text-align: center;
 }
-main .funciona__container .funciona__procedi .funciona__items li {
+main .funciona__container--procedi-items li {
+  text-align: center;
+  font-size: 1.3rem;
   margin: 5%;
+  width: 95%;
 }
 main .funciona__container .funciona__container--video iframe {
   max-width: 100%;
   max-height: 100%;
 }
-main .testi__container {
-  font-size: 1.3rem;
-}
-main .testi__container .testi__title {
+main .testi__container--subtitle {
+  font-size: 2rem;
   color: rgb(255, 255, 0);
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-align: center;
 }
-main .testi__container .testi__card {
+main .testi__container--tablero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .testi__container--tablero .testi__card {
+  font-size: 1.3rem;
   width: 80%;
-  margin: 10% 0%;
+  margin: 5% 0%;
   border: 0.2rem solid black;
   border-radius: 0.7rem;
 }
-main .testi__container .testi__card .testi__card--img {
+main .testi__container--tablero .testi__card--img {
   border-radius: 50rem;
   margin: 2% 0%;
 }
-main .testi__container .testi__card .testi__nombre + p {
+main .testi__container--tablero .testi__card--nombre + p {
   margin: 5% 0%;
 }
-main .testi__container .testi__card .testi__calificasion .bi {
+main .testi__container--tablero .testi__card--calificasion .bi {
   color: greenyellow;
 }
 
@@ -675,18 +685,25 @@ main .testi__container .testi__card .testi__calificasion .bi {
     margin-bottom: 5%;
     width: 100%;
   }
-  main .funciona__container .funciona__procedi .funciona__title {
-    font-size: 3rem;
+  main .funciona__container--procedi-title {
+    font-size: 2.5rem;
+    text-align: start;
   }
-  main .testi__container .testi__title {
+  main .funciona__container--procedi-items li {
+    font-size: 1.5rem;
+    margin: 1.5%;
+    width: 90%;
+    text-align: start;
+  }
+  main .testi__container--subtitle {
     font-size: 2.5rem;
     text-align: center;
   }
-  main .testi__container .testi__tablero {
+  main .testi__container--tablero {
     display: flex;
-    align-items: center;
+    flex-direction: row;
   }
-  main .testi__container .testi__tablero .testi__card {
+  main .testi__container--tablero .testi__card {
     margin: 1%;
   }
   footer .footer__container--redes {
@@ -717,16 +734,6 @@ main .testi__container .testi__card .testi__calificasion .bi {
     width: 100%;
     font-size: 2rem;
     padding-left: 2.5rem;
-  }
-  main .info__container {
-    flex-direction: row;
-  }
-  main .info__container .info__description {
-    width: 100%;
-  }
-  main .info__container .info__registro {
-    margin-left: 2rem;
-    width: 70%;
   }
 }
 main .info__container {
