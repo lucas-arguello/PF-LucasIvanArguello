@@ -25,7 +25,7 @@ header {
   position: sticky;
   padding: 1.5%;
   background: rgb(32, 218, 137);
-  background-image: linear-gradient(rgba(66, 107, 178, 0.5), rgba(216, 230, 66, 0.5));
+  background-image: linear-gradient(to top, rgba(66, 107, 178, 0.5), rgba(216, 230, 66, 0.5));
 }
 header .container .nav__navBar {
   padding: 1rem;
@@ -43,6 +43,7 @@ header .container .nav__navBar--logo {
 }
 header .container .nav__navBar--logo-img {
   width: 100%;
+  filter: brightness(100%);
 }
 header .container .nav__navBar--logo-name {
   color: rgb(0, 110, 255);
@@ -609,6 +610,7 @@ main .testi__container--tablero .testi__card--calificasion .bi {
     font-size: 1.5rem;
   }
   main .serParte__container--btn {
+    width: 35%;
     font-size: 1.5rem;
     border-radius: 15%;
   }
