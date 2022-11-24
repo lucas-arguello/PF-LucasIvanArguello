@@ -109,8 +109,11 @@
       </section>
 
       <section class="contacto__container">
-        <div class="form">
-          <h1 class="contacto__title">CONTACTO</h1>
+        
+        <div class="contacto__container--form">
+          
+          <h1 class="contacto__container--form-title">CONTACTO</h1>
+          
           <form class="contacto__formulario" action="">
             <label class="contacto__formulario--label" for="nombre">Nombre y apellido:</label>
 
@@ -126,42 +129,43 @@
             <label class="contacto__formulario--label" for="mensaje">Mensaje</label>
 
             <textarea
-              class="contacto__area"
+              class="contacto__formulario--area"
               name="mensaje"
               id="mensaje"
               cols="30"
               rows="10"
             ></textarea>
 
-            <input class="contacto__btn" type="submit" value="Enviar" />
+            <input class="contacto__formulario--btn" type="submit" value="Enviar" />
           </form>
         </div>
-        <div class="preguntas__container">
-          <h2 class="preguntas__title">PREGUNTAS FRECUENTES</h2>
 
-          <p class="pregunta">¿El pago es mensual?</p>
-          <p class="respuesta">No, no somos una prepaga.</p>
+        <div class="contacto__container--preguntas">
+          <h2 class="contacto__container--preguntas-title">PREGUNTAS FRECUENTES</h2>
 
-          <p class="pregunta">
+          <p class="contacto__container--preguntas-pregunta">¿El pago es mensual?</p>
+          <p class="contacto__container--preguntas-respuesta">No, no somos una prepaga.</p>
+
+          <p class="contacto__container--preguntas-pregunta">
             ¿ Necesito tener obra social, para solicitar el servicio ?
           </p>
-          <p class="respuesta">
+          <p class="contacto__container--preguntas-respuesta">
             No, no trabajamos ni pertenecemos a ninguna obra social.
           </p>
 
-          <p class="pregunta">¿ La consulta puede ser presencial ?</p>
-          <p class="respuesta">
+          <p class="contacto__container--preguntas-pregunta">¿ La consulta puede ser presencial ?</p>
+          <p class="contacto__container--preguntas-respuesta">
             No, todas las consultas se realizan de manera virtual, ingresando
             fecha y hora al truno solicitado
           </p>
 
-          <p class="pregunta">¿ El doctor puede realizar recetas medicas ?</p>
-          <p class="respuesta">
+          <p class="contacto__container--preguntas-pregunta">¿ El doctor puede realizar recetas medicas ?</p>
+          <p class="contacto__container--preguntas-respuesta">
             Si, luego de terminada la consulta se realiza la receta.
           </p>
 
-          <p class="pregunta">¿ Con que medios de pago trabajan ?</p>
-          <p class="respuesta">
+          <p class="contacto__container--preguntas-pregunta">¿ Con que medios de pago trabajan ?</p>
+          <p class="contacto__container--preguntas-respuesta">
             Recibimos Transferencias Bancarias, Mercado de Pago, y todas las Tarjetas de
             credito.
           </p>

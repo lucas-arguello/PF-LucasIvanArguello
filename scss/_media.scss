@@ -45,8 +45,6 @@
       flex-wrap: wrap;
 
       &--doctores{
-        /*include flex-justbetween-aligncenter;*/
-        /*background: red;*/
         width:80%;
         display: flex;
         justify-content: space-between;
@@ -54,9 +52,6 @@
         
 
         .profesiones__card {
-          /*background: black;*/
-          /*max-width: 30%;
-          flex: 1 1 33%;*/
           margin: 0.5rem;
 
           &--title{
@@ -93,30 +88,35 @@
       flex-direction: row;
       width: 100%;
 
-      .form {
+      &--form {
         margin-right: 1rem;
 
-        .contacto__title {
-          font-size: 1.5rem;
+        &-title {
+          font-size: 2.5rem;
         }
 
         .contacto__formulario {
-          .contacto__formulario--label {
+          &--label {
             font-size: 1.5rem;
+          }
+
+          &--btn {
+            align-self: center;
+            margin-top: 1.5rem;
+            @include boton-2(0.3rem 2rem, 1rem, 600, 10%);
           }
         }
 
-        .contacto__btn {
-          align-self: center;
-          margin-top: 1.5rem;
-          @include boton-2(0.5rem, 1rem, 600, 10%);
-        }
+        
+      }
+
+      &--preguntas {
+        width: 100%;
+
       }
     }
 
-    .preguntas__container {
-      width: 100%;
-    }
+   
 
   }
   
@@ -242,8 +242,6 @@
       flex-wrap: wrap;
 
       &--doctores{
-        /*include flex-justbetween-aligncenter;*/
-        /*background: red;*/
         width:47%;
         display: flex;
         padding: .2rem;
@@ -304,39 +302,54 @@
       display: flex;
       justify-content: space-between;
 
-      .form {
+      &--form {
         width: 100%;
         margin: 2%;
-        .contacto__title {
-          font-size: 2rem;
+
+        &-title {
+          font-size: 2.5rem;
         }
 
         .contacto__formulario {
           display: flex;
 
-          .contacto__formulario--input {
+          &--input {
             width: 100%;
+            height: 2rem;
           }
 
-          .contacto__formulario--label {
-            font-size: 1.5rem;
+          &--label {
+            font-size: 1.8rem;
+            
           }
 
-          .contacto__btn {
+          &--area{
+            height: 21rem;
+          }
+
+          &--btn {
             align-self: center;
             margin-top: 1.5rem;
-            @include boton-2(0.5rem, 1rem, 600, 10%);
+            @include boton-2(0.5rem 2rem, 1rem, 600, 10%);
           }
         }
       }
 
-      .preguntas__container {
+      &--preguntas {
         width: 100%;
         margin: 2%;
 
-        .preguntas__title {
+        &-title {
           padding-left: 0%;
           font-size: 2rem;
+        }
+
+        &-pregunta{
+          font-size: 1.8rem;
+        }
+
+        &-respuesta{
+          font-size: 1.8rem;
         }
       }
     }
