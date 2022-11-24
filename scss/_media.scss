@@ -29,11 +29,15 @@
   }
 
   main{
-
     .info__container {
-      flex-direction: row;
-    }
+      display: flex;
+            
+      .info__registro{
+        margin-left: 1.5rem;
+      }
 
+    }
+    
     .profesiones__container{
 
       display: flex;
@@ -165,7 +169,8 @@
   main{
 
     .info__container {
-      flex-direction: row;
+      display: flex;
+      
       .info__description {
         width: 100%;
       }
@@ -174,47 +179,36 @@
         width: 70%;
       }
     }
-
-    .especie__container {
-      .especie__title {
-        font-size: 3rem;
-      }
-      .especie__subtitle {
-        font-size: 2.5rem;
-      }
-    }
-
+   
     .somos__container {
       display: flex;
       flex-direction: row;
 
-      .somos__subcontainer {
-        .somos__title {
+      &--descripcion1 {
+        &-title {
           margin-right: 1rem;
-          font-size: 3rem;
+          font-size: 2.5rem;
           width: 100%;
           height: 70%;
         }
 
-        .somos__parrafo1 {
+        &-texto1 {
           width: 100%;
           font-size: 1.5rem;
         }
       }
 
-      .somos__img {
-        background: yellow;
-        margin: 3rem 1rem 0rem 1rem;
-        img {
+      &--img img{
+          margin: 3rem 1rem 0rem 1rem;
           max-width: 550px;
           min-width: 550px;
           max-height: 450px;
           min-height: 450px;
-        }
+        
       }
     }
 
-    .somos__parrafo2 {
+    .somos__texto2 {
       font-size: 1.5rem;
       margin: 2rem auto;
       p {
@@ -223,16 +217,16 @@
     }
 
     .serParte__container {
-      .serParte__title {
-        font-size: 1.8rem;
+      &--subtitle {
+        font-size: 2rem;
         color: map-get($text-color, text-3);
       }
 
-      .serParte__parrafo {
+      &--postulante {
         font-size: 1.5rem;
       }
 
-      .serParte_btn {
+      &--btn {
         font-size: 1.5rem;
         border-radius: 15%;
       }

@@ -123,6 +123,7 @@ main .especie__container {
   flex-direction: column;
 }
 main .especie__container--title {
+  font-size: 2.5rem;
   color: rgb(255, 255, 0);
   margin-bottom: 1rem;
 }
@@ -171,7 +172,7 @@ main .ventajas__container {
 main .ventajas__container--subtitle {
   color: rgb(255, 255, 0);
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-top: 3rem;
   margin-bottom: 2.5rem;
 }
@@ -195,29 +196,30 @@ main .somos__container {
   flex-direction: column;
   margin-top: 2rem;
 }
-main .somos__container .somos__title {
+main .somos__container--descripcion1-title {
   color: rgb(255, 255, 0);
   padding-bottom: 0.5rem;
+  font-size: 2.5rem;
 }
-main .somos__container .somos__parrafo1 {
+main .somos__container--descripcion1-texto1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: 1.5rem 0;
   font-size: 1.2rem;
 }
-main .somos__container .somos__parrafo1 p {
+main .somos__container--descripcion1-texto1 p {
   margin: 0.5rem 0;
 }
-main .somos__container .somos__img img {
+main .somos__container--img img {
   width: 100%;
   background: rgb(32, 218, 137);
 }
-main .somos__parrafo2 {
+main .somos__texto2 {
   font-size: 1.2rem;
   margin: 1.5rem 0;
 }
-main .somos__parrafo2 p {
+main .somos__texto2 p {
   margin: 0.5rem 0;
 }
 main .serParte__container {
@@ -226,14 +228,16 @@ main .serParte__container {
   font-size: 1.2rem;
   margin: 1.5rem 0;
 }
-main .serParte__container .serParte__title {
+main .serParte__container--subtitle {
+  color: rgb(255, 255, 0);
+  font-size: 2rem;
   text-align: center;
   margin: 1rem;
 }
-main .serParte__container .serParte__parrafo {
+main .serParte__container--postulante {
   text-align: center;
 }
-main .serParte__container .serParte_btn {
+main .serParte__container--btn {
   font-size: 1rem;
   font-weight: 500;
   padding: 0.5rem;
@@ -425,7 +429,10 @@ main .testi__container .testi__card .testi__calificasion .bi {
     font-size: 1.5rem;
   }
   main .info__container {
-    flex-direction: row;
+    display: flex;
+  }
+  main .info__container .info__registro {
+    margin-left: 1.5rem;
   }
   main .profesiones__container {
     display: flex;
@@ -520,7 +527,7 @@ main .testi__container .testi__card .testi__calificasion .bi {
     padding-left: 2.5rem;
   }
   main .info__container {
-    flex-direction: row;
+    display: flex;
   }
   main .info__container .info__description {
     width: 100%;
@@ -529,51 +536,42 @@ main .testi__container .testi__card .testi__calificasion .bi {
     margin-left: 2rem;
     width: 70%;
   }
-  main .especie__container .especie__title {
-    font-size: 3rem;
-  }
-  main .especie__container .especie__subtitle {
-    font-size: 2.5rem;
-  }
   main .somos__container {
     display: flex;
     flex-direction: row;
   }
-  main .somos__container .somos__subcontainer .somos__title {
+  main .somos__container--descripcion1-title {
     margin-right: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 100%;
     height: 70%;
   }
-  main .somos__container .somos__subcontainer .somos__parrafo1 {
+  main .somos__container--descripcion1-texto1 {
     width: 100%;
     font-size: 1.5rem;
   }
-  main .somos__container .somos__img {
-    background: yellow;
+  main .somos__container--img img {
     margin: 3rem 1rem 0rem 1rem;
-  }
-  main .somos__container .somos__img img {
     max-width: 550px;
     min-width: 550px;
     max-height: 450px;
     min-height: 450px;
   }
-  main .somos__parrafo2 {
+  main .somos__texto2 {
     font-size: 1.5rem;
     margin: 2rem auto;
   }
-  main .somos__parrafo2 p {
+  main .somos__texto2 p {
     margin: 2rem auto;
   }
-  main .serParte__container .serParte__title {
-    font-size: 1.8rem;
+  main .serParte__container--subtitle {
+    font-size: 2rem;
     color: rgb(255, 255, 0);
   }
-  main .serParte__container .serParte__parrafo {
+  main .serParte__container--postulante {
     font-size: 1.5rem;
   }
-  main .serParte__container .serParte_btn {
+  main .serParte__container--btn {
     font-size: 1.5rem;
     border-radius: 15%;
   }
@@ -728,7 +726,7 @@ main .info__container {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  display: flex;
+  /*display: flex;*/
 }
 main .info__container .info__description {
   width: 100%;
