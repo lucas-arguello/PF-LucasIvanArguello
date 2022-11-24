@@ -32,12 +32,22 @@ header .container .nav__navBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /*&--name{
+    color: map-get($text-color, text-4);
+    font-size: 1.3rem;
+  }*/
 }
 header .container .nav__navBar--logo {
-  width: 25%;
+  text-decoration: none;
+  width: 35%;
 }
 header .container .nav__navBar--logo-img {
   width: 100%;
+}
+header .container .nav__navBar--logo-name {
+  color: rgb(0, 110, 255);
+  font-size: 1.2rem;
+  text-align: center;
 }
 header .container .nav__navBar--icon-btn {
   padding: 0.5rem;
@@ -120,7 +130,7 @@ svg {
 }
 
 main .especie__container {
-  margin-top: 5rem;
+  margin-top: 1.3rem;
   padding-top: 1rem;
   text-align: center;
   display: flex;
@@ -198,7 +208,7 @@ main .somos__container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 main .somos__container--descripcion1-title {
   color: rgb(255, 255, 0);
@@ -399,7 +409,7 @@ main .funciona__container--procedi-title {
 main .funciona__container--procedi-items li {
   text-align: center;
   font-size: 1.3rem;
-  margin: 5%;
+  margin: 5% 5%;
   width: 95%;
 }
 main .funciona__container .funciona__container--video iframe {
@@ -446,6 +456,9 @@ main .testi__container--tablero .testi__card--calificasion .bi {
   }
   header .container .nav__navBar--logo {
     width: 400%;
+  }
+  header .container .nav__navBar--logo-name {
+    text-align: center;
   }
   header .container .nav__navBar--icon-btn {
     display: none;
@@ -536,6 +549,7 @@ main .testi__container--tablero .testi__card--calificasion .bi {
     padding: 0;
   }
   header .container .nav__navBar--logo-img {
+    margin-left: 20%;
     width: 60%;
   }
   header .container .nav__navBar--icon-btn {

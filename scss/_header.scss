@@ -14,11 +14,25 @@ header {
         @include flex-alingItems-justify(center, space-between);
 
         &--logo {
-          width: 25%;
+          text-decoration: none;
+          width: 35%;
           &-img {
             width: 100%;
+            
                      }
+
+          &-name{
+            color: map-get($text-color, text-4);
+            font-size: 1.2rem;
+            text-align: center;
+          }           
         }
+
+        /*&--name{
+          color: map-get($text-color, text-4);
+          font-size: 1.3rem;
+        }*/
+
         &--icon-btn {
           padding: 0.5rem;
           border-radius: 10%;

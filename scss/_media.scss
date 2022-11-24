@@ -9,6 +9,10 @@
           width: 20%;
           &--logo {
             width: 400%;
+
+            &-name{
+              text-align: center;
+            }
           }
           &--icon-btn {
             display: none;
@@ -143,7 +147,9 @@
           
           &--logo {
             
+            
             &-img{
+              margin-left: 20%;
               width: 60%;
             }
           }
