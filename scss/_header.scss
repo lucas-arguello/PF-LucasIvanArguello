@@ -4,7 +4,7 @@ header {
   position: sticky;
   padding: 1.5%;
   background: $backg-color;
-   
+  background-image: linear-gradient(rgba(66, 107, 178, 0.5), rgba(216, 230, 66, 0.5));
 
   .container {
     .nav {
@@ -48,6 +48,7 @@ header {
         overflow: hidden;
         transition: height 0.4s ease;
         background: $backg-color;
+        background-image: linear-gradient( rgba(216, 230, 66, 0.5),rgba(66, 107, 178, 0.5));
         display: flex;
         @include alingItems-direction-justify(center, column, space-around);
                 
@@ -58,7 +59,7 @@ header {
             font-size: 1.5rem;
             text-decoration: none;
             color: map-get($text-color, text-4);
-            background: $backg-color;
+            /*background: $backg-color;*/
            
             
             &:hover {

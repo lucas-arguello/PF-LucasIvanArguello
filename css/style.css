@@ -25,6 +25,7 @@ header {
   position: sticky;
   padding: 1.5%;
   background: rgb(32, 218, 137);
+  background-image: linear-gradient(rgba(66, 107, 178, 0.5), rgba(216, 230, 66, 0.5));
 }
 header .container .nav__navBar {
   padding: 1rem;
@@ -60,6 +61,7 @@ header .container .nav__list {
   overflow: hidden;
   transition: height 0.4s ease;
   background: rgb(32, 218, 137);
+  background-image: linear-gradient(rgba(216, 230, 66, 0.5), rgba(66, 107, 178, 0.5));
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -72,7 +74,7 @@ header .container .nav__list--items-li {
   font-size: 1.5rem;
   text-decoration: none;
   color: rgb(0, 110, 255);
-  background: rgb(32, 218, 137);
+  /*background: $backg-color;*/
 }
 header .container .nav__list--items-li:hover {
   color: rgb(246, 255, 0);
@@ -95,6 +97,7 @@ footer {
   text-align: center;
   color: rgb(0, 110, 255);
   background: rgb(32, 218, 137);
+  background-image: linear-gradient(rgba(66, 107, 178, 0.5), rgba(216, 230, 66, 0.5));
   font-size: 1.2rem;
 }
 footer .footer__container {
@@ -215,6 +218,7 @@ main .somos__container--descripcion1-texto1 p {
 main .somos__container--img img {
   width: 100%;
   background: rgb(32, 218, 137);
+  background-image: linear-gradient(rgba(20, 50, 100, 0.5), rgba(216, 230, 66, 0.5));
 }
 main .somos__texto2 {
   font-size: 1.2rem;
@@ -450,6 +454,7 @@ main .testi__container--tablero .testi__card--calificasion .bi {
     height: auto;
     position: static;
     flex-direction: row;
+    background: none;
   }
   header .container .nav__list--items-li {
     font-size: 1.5rem;

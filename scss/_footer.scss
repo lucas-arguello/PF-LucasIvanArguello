@@ -3,6 +3,7 @@ footer {
   text-align: center;
   color:map-get($text-color, text-4);
   background: $backg-color;
+  background-image: linear-gradient(rgba(66, 107, 178, 0.5), rgba(216, 230, 66, 0.5));
   font-size: 1.2rem;
     .footer__container {
     @include flex-content(center);
