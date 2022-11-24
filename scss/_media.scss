@@ -55,7 +55,7 @@
           margin: 0.5rem;
 
           &--title{
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             font-weight: 600;
           }
                
@@ -70,13 +70,13 @@
         .profesiones__curri{
           margin: 0.5rem;
 
-          &--nombre{
-            font-size: 1.2rem;
-          }
+         
 
           &--btn{
             font-size: .9rem;
           }
+
+          
         }
 
       }
@@ -371,7 +371,7 @@
 
         &-items li {
           font-size: 1.5rem;
-          margin:1.5%;
+          margin:5.5%;
           width: 90%;
           text-align: start;
         }
@@ -392,6 +392,7 @@
 
         .testi__card {
           margin: 1%;
+          padding: 1%;
         }
       }
     }
@@ -400,6 +401,7 @@
 
   
   footer {
+    font-size: 1.7rem;
     .footer__container {
       &--redes {
         padding-left: 2rem;

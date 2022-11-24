@@ -48,7 +48,9 @@ main{
           text-align: center;
           margin-bottom: 3rem;
 
-          
+          &--nombre{
+            font-size: 1.5rem;
+          }
                       
           &--btn {
             @include boton-2(0.2rem 0.9rem, 1rem, 600, 1.5rem);
@@ -57,19 +59,25 @@ main{
           &--subtitle{
             margin-top: 1rem;
             color: map-get($text-color, text-5);
+            font-size: 1.5rem;
           }
 
-          &--descrip{
+          &--descrip li{
             list-style: none;
+            font-size: 1.2rem;
+            margin: 3.5%;
           }
 
           &--subtitleHorario{
             margin-top: 1rem;
             color: map-get($text-color, text-5);
+            font-size: 1.5rem;
           }
 
-          &--horario{
+          &--horario li{
             list-style: none;
+            font-size: 1.2rem;
+            margin: 3.5%;
           }
         }
       }

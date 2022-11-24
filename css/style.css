@@ -95,6 +95,7 @@ footer {
   text-align: center;
   color: rgb(0, 110, 255);
   background: rgb(32, 218, 137);
+  font-size: 1.2rem;
 }
 footer .footer__container {
   display: flex;
@@ -286,6 +287,9 @@ main .profesiones__container--doctores .profesiones__curri {
   text-align: center;
   margin-bottom: 3rem;
 }
+main .profesiones__container--doctores .profesiones__curri--nombre {
+  font-size: 1.5rem;
+}
 main .profesiones__container--doctores .profesiones__curri--btn {
   padding: 0.2rem 0.9rem;
   font-size: 1rem;
@@ -295,16 +299,22 @@ main .profesiones__container--doctores .profesiones__curri--btn {
 main .profesiones__container--doctores .profesiones__curri--subtitle {
   margin-top: 1rem;
   color: rgb(144, 221, 56);
+  font-size: 1.5rem;
 }
-main .profesiones__container--doctores .profesiones__curri--descrip {
+main .profesiones__container--doctores .profesiones__curri--descrip li {
   list-style: none;
+  font-size: 1.2rem;
+  margin: 3.5%;
 }
 main .profesiones__container--doctores .profesiones__curri--subtitleHorario {
   margin-top: 1rem;
   color: rgb(144, 221, 56);
+  font-size: 1.5rem;
 }
-main .profesiones__container--doctores .profesiones__curri--horario {
+main .profesiones__container--doctores .profesiones__curri--horario li {
   list-style: none;
+  font-size: 1.2rem;
+  margin: 3.5%;
 }
 
 .contacto__container,
@@ -406,9 +416,10 @@ main .testi__container--tablero {
 main .testi__container--tablero .testi__card {
   font-size: 1.3rem;
   width: 80%;
-  margin: 5% 0%;
+  margin: 2.5% 0%;
   border: 0.2rem solid black;
   border-radius: 0.7rem;
+  padding: 2.5%;
 }
 main .testi__container--tablero .testi__card--img {
   border-radius: 50rem;
@@ -463,7 +474,7 @@ main .testi__container--tablero .testi__card--calificasion .bi {
     margin: 0.5rem;
   }
   main .profesiones__container--doctores .profesiones__card--title {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 600;
   }
   main .profesiones__container--doctores .profesiones__card--img {
@@ -474,9 +485,6 @@ main .testi__container--tablero .testi__card--calificasion .bi {
   }
   main .profesiones__container--doctores .profesiones__curri {
     margin: 0.5rem;
-  }
-  main .profesiones__container--doctores .profesiones__curri--nombre {
-    font-size: 1.2rem;
   }
   main .profesiones__container--doctores .profesiones__curri--btn {
     font-size: 0.9rem;
@@ -691,7 +699,7 @@ main .testi__container--tablero .testi__card--calificasion .bi {
   }
   main .funciona__container--procedi-items li {
     font-size: 1.5rem;
-    margin: 1.5%;
+    margin: 5.5%;
     width: 90%;
     text-align: start;
   }
@@ -705,6 +713,10 @@ main .testi__container--tablero .testi__card--calificasion .bi {
   }
   main .testi__container--tablero .testi__card {
     margin: 1%;
+    padding: 1%;
+  }
+  footer {
+    font-size: 1.7rem;
   }
   footer .footer__container--redes {
     padding-left: 2rem;
