@@ -663,7 +663,7 @@ main .testi__container--tablero .testi__card--calificasion .bi {
     height: 2rem;
   }
   main .contacto__container--form .contacto__formulario--label {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   main .contacto__container--form .contacto__formulario--area {
     height: 21rem;
@@ -685,10 +685,10 @@ main .testi__container--tablero .testi__card--calificasion .bi {
     font-size: 2rem;
   }
   main .contacto__container--preguntas-pregunta {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   main .contacto__container--preguntas-respuesta {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   main .funciona__container {
     display: flex;
